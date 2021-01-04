@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<!-- <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property> -->
+<!-- <property name="hiebrnate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> -->
+<!-- <property name="hibernate.connection.username">scott</property> -->
+<!-- <property name="hibernate.connection.password">tiger</property> -->
+
+<!-- oracle jdbc cfg file -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.username">scott</property>
+		<property name="hibernate.connection.password">tiger</property>
+<!-- hibernate query realted (show the query of hibernate ) -->
+ <property name="hibernate.show_sql">true</property>
+ <property name="hibernate.format_sql">true</property>
+<mapping resource="com/nt/entity/Actor.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

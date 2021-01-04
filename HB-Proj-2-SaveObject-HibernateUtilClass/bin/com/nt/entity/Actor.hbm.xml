@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "
+http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- dynamically table genrated and insert the record into table(schema) -->
+<class name="com.nt.entity.Actor" table="hb_tb1_actor">
+
+<!--primary key column mapping -->
+<id name="actorId" column="ACTORID" >
+</id>
+
+<!-- Other properties mapping -->
+<property name="actorName" column="ACTORNAME" />
+<property name="actorAddress" column="ACTORADDRESS"/>
+<property name="phoneNo" column="PHONENO"  />
+<property name="remuneration" column="REMUNERATION" />
+</class>
+
+</hibernate-mapping>
