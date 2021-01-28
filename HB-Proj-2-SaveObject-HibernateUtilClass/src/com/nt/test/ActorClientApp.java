@@ -14,7 +14,7 @@ public class ActorClientApp {
 		System.out.println(ses.hashCode());
 //craete entity class object
 		Actor actor = new Actor();
-		actor.setActorId(810);
+		actor.setActorId(1);
 		actor.setActorName("katrina");
 		actor.setActorAddress("mumbai");;
 		actor.setPhoneNo(887956545);
