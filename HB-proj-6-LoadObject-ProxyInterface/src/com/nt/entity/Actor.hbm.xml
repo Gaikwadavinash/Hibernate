@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.nt.entity.Actor" table="HB_TB1_ACTOR" dynamic-insert="true" lazy="true" proxy="com.nt.entity.IActor">
+<id name="actorId" type="int" column="ACTORID">
+<generator class="increment"/>
+</id>
+<property name="actorName" type="string" column="ACTORNAME"/>
+<property name="actorAddress" type="string" column="ACTORADDRESS"></property>
+<property name="phoneNo" type="long" column="PHONENO"/>
+<property name="remuneration" type="float" column="REMUNERATION"/>
+
+</class>
+
+
+
+</hibernate-mapping>
