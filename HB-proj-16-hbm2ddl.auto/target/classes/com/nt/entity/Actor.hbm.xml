@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.nt.entity.Actor"  >
+<!-- Normal save Object(saveOrUpdateObjectTest1(Refer) -->
+<!-- <id name="actorId" type="int" column="ACTORID" > -->
+
+<!-- Case1,case2,case3 uses unsiged value-->
+<!-- <id name="actorId" type="int" column="ACTORID" unsaved-value="30"> -->
+<!-- Case 4 unsigned value will not be there -->
+<!-- <id name="actorId" type="int" column="ACTORID"> -->
+<!-- case 5 no genrator no usgind value slect+ins,sel+upda -->
+<id name="actorId" type="int" column="ACTORID">
+<!-- <generator class="increment"/> -->
+</id>
+<property name="actorName" type="string" column="ACTORNAME" length="20"/>
+<property name="actorAddress" type="string" column="ACTORADDRESS" length="20" />
+<property name="phoneNo" type="long" column="PHONENO"/>
+<property name="desg" type="string" column="DESG" length="20" />
+<property name="remuneration" type="float" column="REMUNERATION"/>
+
+</class>
+</hibernate-mapping>
