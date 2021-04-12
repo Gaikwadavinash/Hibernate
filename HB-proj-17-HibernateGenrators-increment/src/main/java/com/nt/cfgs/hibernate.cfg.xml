@@ -5,10 +5,10 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- Oracle -->
-		<!-- <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> -->
-		<!-- <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> -->
-		<!-- <property name="connection.username">scott</property> -->
-		<!-- <property name="connection.password">tiger</property> -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="connection.username">scott</property>
+		<property name="connection.password">tiger</property>
 
 		<!-- mysql Configuration File -->
 <!-- 		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property> -->
