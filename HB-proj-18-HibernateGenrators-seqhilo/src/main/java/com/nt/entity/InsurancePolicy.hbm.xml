@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.nt.entity.InsurancePolicy" table="InsurancePolicy_Genrator">
+<id  name="policyId" >
+<generator class="seqhilo">
+<!-- <param name="sequence">POLICYID_SEQ</param> -->
+<!-- <param name="max_lo">5</param> -->
+</generator>
+</id>
+<property name="policyName" not-null="true" length="20"/>
+<property name="company"  not-null="true" length="20"/>
+<property name="tenure"  not-null="true" type="float" />
+</class>
+</hibernate-mapping>
