@@ -11,7 +11,7 @@ static {
 	//Bootstrap the hibernate
 Configuration cfg= new Configuration();
 
-cfg.configure("com/nt/cfgs/hibernate.cfg.xml");
+cfg.configure("com/nt/cfgs/hibernate.cfg.x");
 //Create Session Factory Object
 factory=cfg.buildSessionFactory();
 	
